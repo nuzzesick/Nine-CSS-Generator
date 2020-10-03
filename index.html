@@ -27,6 +27,16 @@
         display: block;
         margin: 1rem 0 1rem 0;
       }
+      code {
+        display: block;
+        margin: 0.6rem 0 0.6rem 0;
+        padding: 0.6rem 0.3rem;
+        border-radius: 3px;
+        width: fit-content;
+        color: rgb(226, 226, 226);
+        background: #222222;
+        font-size: 1rem;
+      }
     </style>
   </head>
   <body>
@@ -36,40 +46,40 @@
       <form onsubmit="transform(event)">
         <textarea placeholder=".spanClass { color: red; }"
         ></textarea>
+        <input type="submit" value="Generate" />
         <span>
           Example:
           .spanClass {
             color: red;
           }
         </span>
-        <input type="submit" value="Transform" />
       </form>
       <h2>Default</h2>
-      <span id="css-line"></span>
-      <span id="hover"></span>
-      <span id="focus"></span>
-      <span id="active"></span>
+      <code id="css-line"></code>
+      <code id="hover"></code>
+      <code id="focus"></code>
+      <code id="active"></code>
       <h2>Breakpoints</h2>
       <h4>SM</h4>
-      <span id="sm-css-line"></span>
-      <span id="sm-hover"></span>
-      <span id="sm-focus"></span>
-      <span id="sm-active"></span>
+      <code id="sm-css-line"></code>
+      <code id="sm-hover"></code>
+      <code id="sm-focus"></code>
+      <code id="sm-active"></code>
       <h4>MD</h4>
-      <span id="md-css-line"></span>
-      <span id="md-hover"></span>
-      <span id="md-focus"></span>
-      <span id="md-active"></span>
+      <code id="md-css-line"></code>
+      <code id="md-hover"></code>
+      <code id="md-focus"></code>
+      <code id="md-active"></code>
       <h4>LG</h4>
-      <span id="lg-css-line"></span>
-      <span id="lg-hover"></span>
-      <span id="lg-focus"></span>
-      <span id="lg-active"></span>
+      <code id="lg-css-line"></code>
+      <code id="lg-hover"></code>
+      <code id="lg-focus"></code>
+      <code id="lg-active"></code>
       <h4>XL</h4>
-      <span id="xl-css-line"></span>
-      <span id="xl-hover"></span>
-      <span id="xl-focus"></span>
-      <span id="xl-active"></span>
+      <code id="xl-css-line"></code>
+      <code id="xl-hover"></code>
+      <code id="xl-focus"></code>
+      <code id="xl-active"></code>
     </div>
     <script src="source.js"></script>
   </body>
