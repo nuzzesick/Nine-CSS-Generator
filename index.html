@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Nine CSS Generator</title>
+    <style>
+      body {
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+      }
+      div {
+        margin: 2rem;
+      }
+      .title {
+        margin: 1rem 0 0 0;
+      }
+      .by {
+        margin: 0.4rem 0 1.4rem 0;
+        color: gray;
+      }
+      textarea {
+        display: inline;
+        width: 400px;
+        height: 80px;
+      }
+      span, input {
+        display: block;
+        margin: 1rem 0 1rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="title">Nine CSS Generator</h1>
+      <span class="by">Developed by <a href="https://nuzze.now.sh" target="_blank">Nuzze</a></span>
+      <form onsubmit="transform(event)">
+        <textarea placeholder=".spanClass { color: red; }"
+        ></textarea>
+        <span>
+          Example:
+          .spanClass {
+            color: red;
+          }
+        </span>
+        <input type="submit" value="Transform" />
+      </form>
+      <h2>Default</h2>
+      <span id="css-line"></span>
+      <span id="hover"></span>
+      <span id="focus"></span>
+      <span id="active"></span>
+      <h2>Breakpoints</h2>
+      <h4>SM</h4>
+      <span id="sm-css-line"></span>
+      <span id="sm-hover"></span>
+      <span id="sm-focus"></span>
+      <span id="sm-active"></span>
+      <h4>MD</h4>
+      <span id="md-css-line"></span>
+      <span id="md-hover"></span>
+      <span id="md-focus"></span>
+      <span id="md-active"></span>
+      <h4>LG</h4>
+      <span id="lg-css-line"></span>
+      <span id="lg-hover"></span>
+      <span id="lg-focus"></span>
+      <span id="lg-active"></span>
+      <h4>XL</h4>
+      <span id="xl-css-line"></span>
+      <span id="xl-hover"></span>
+      <span id="xl-focus"></span>
+      <span id="xl-active"></span>
+    </div>
+    <script src="source.js"></script>
+  </body>
+</html>
